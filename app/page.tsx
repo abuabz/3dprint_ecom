@@ -17,107 +17,102 @@ export default function KlitzoLanding() {
   }, [])
 
   const features = [
-    { icon: Zap, text: "Works on Multiple Surfaces", content: "Cleans steel, plastic, ceramics, glass, vehicle bodies, tiles, and more.", delay: "0ms" },
-    { icon: Sparkles, text: "Instant Stain Removal", content: "Removes old & new stains instantly, including oil, grease, ink, rust, food stains, toilet yellow stains, and hard-water spots.", delay: "200ms" },
-    { icon: Shield, text: "Brightening Formula", content: "Leaves surfaces looking brighter and refreshed after cleaning.", delay: "400ms" },
-    { icon: Shirt, text: "Safe to Use", content: "Formulated to be safe for a wide range of surfaces and materials.", delay: "600ms" },
-    { icon: Home, text: "Export Quality", content: "Manufactured to meet international quality standards.", delay: "800ms" },
-    { icon: Timer, text: "Long Shelf Life", content: "Stays effective for a long time, ensuring lasting performance.", delay: "800ms" },
+    { icon: Sparkles, text: "Uniquely Personalized", content: "Custom-made lithophanes that reveal your personal memories when illuminated.", delay: "0ms" },
+    { icon: Zap, text: "High-Quality 3D Print", content: "Precision crafted using premium PLA materials for realistic textures and durability.", delay: "200ms" },
+    { icon: Shield, text: "Emotional Value", content: "More than just a gift—it’s a memory brought to life.", delay: "400ms" },
+    { icon: Home, text: "Perfect Home Décor", content: "Adds a magical, ambient glow to any room, bedside, or desk.", delay: "600ms" },
+    { icon: Timer, text: "Long-Lasting LED", content: "Energy-efficient warm LED lights that last for hours of glowing memories.", delay: "800ms" },
+    { icon: Shirt, text: "Versatile Gifting", content: "Ideal for anniversaries, birthdays, weddings, or just because.", delay: "800ms" },
   ]
 
   const products = [
     {
       id: 1,
-      name: "KLITZO Stain Remover 300ml",
-      image: "/assets/productmainimg.jpeg",
-      price: "₹599.00",
-      originalPrice: "₹1199.00",
-      description: "Ultimate stain fighting power for the toughest stains",
-      category: "stain-remover",
+      name: "Magic Moon",
+      image: "/magic moon.jpg.jpeg",
+      price: "₹1599.00",
+      originalPrice: "",
+      description: "A premium lithophane creation that transforms your photo into a breathtaking glowing moon.",
+      category: "lamps",
       features: [
-        "Instant removal of old & new stains",
-        "Fresh orange fragrance",
-        "Effective on oil, grease, ink, rust, food stains, toilet yellow stains, and hard-water spots",
-        "Safe for steel, plastic, ceramics, glass, vehicle bodies, tiles, and more",
-        "Streak-free finish for glass and shiny surfaces",
-
+        "Fully customizable with your photo",
+        "Stunning moon-like surface texture",
+        "Creates a magical, ambient glow",
+        "Material: High-quality 3D-printed lithophane",
+        "Available in 12, 14, 16, 18 cm",
       ],
-      reviews: 156,
+      reviews: 124,
     },
     {
       id: 2,
-      name: "KLITZO Stain Remover 130ml",
-      image: "/assets/product_130ml.jpeg",
-      price: "₹299.00",
-      originalPrice: "₹599.00",
-      description: "Ultimate stain fighting power for the toughest stains",
-      category: "stain-remover",
+      name: "Mini Moon",
+      image: "/mini moon.png",
+      price: "₹449.00",
+      originalPrice: "",
+      description: "A charming night light that hides your cherished photo inside a glowing moon.",
+      category: "lamps",
       features: [
-        "Instant removal of old & new stains",
-        "Fresh orange fragrance",
-        "Effective on oil, grease, ink, rust, food stains, toilet yellow stains, and hard-water spots",
-        "Safe for steel, plastic, ceramics, glass, vehicle bodies, tiles, and more",
-        "Streak-free finish for glass and shiny surfaces",
-
+        "Custom-made with your personal photo",
+        "Soft, calming light—perfect for night use",
+        "Compact and aesthetic design",
+        "Diameter: 4.5 cm",
+        "Long-lasting and energy efficient",
       ],
-      reviews: 156,
+      reviews: 98,
     },
     {
       id: 3,
-      name: "Aluminium & Steel Hard Cleaner 300ml",
-      image: "/assets/hardcleaner01.jpeg",
-      price: "₹499.00",
-      originalPrice: "₹999.00",
-      description: "Powerful cleaner for tough grime and dirt",
-      category: "hard-cleaner",
+      name: "Magic Keychain",
+      image: "/keychain.jpeg",
+      price: "₹250.00",
+      originalPrice: "",
+      description: "Turn your favorite photo into a beautiful 3D-printed lithophane keychain.",
+      category: "keychains",
       features: [
-        "Removes tough grime and dirt",
-        "Fresh fragrance",
-        "Safe for various surfaces",
-        "Leaves surfaces clean and refreshed",
-
+        "Fully customizable with your photo",
+        "Reveals image beautifully under light",
+        "Lightweight and durable",
+        "Size: 35 × 45 mm",
+        "finish: Smooth, matte white",
       ],
-      reviews: 89,
+      reviews: 215,
     }
-
   ]
-    const mainproducts = [
+  const mainproducts = [
     {
       id: 1,
-      name: "KLITZO Stain Remover 300ml",
-      image: "/assets/productmainimg.jpeg",
-      price: "₹599.00",
-      originalPrice: "₹1199.00",
-      description: "Ultimate stain fighting power for the toughest stains",
-      category: "stain-remover",
+      name: "Magic Moon",
+      image: "/magic moon.jpg.jpeg",
+      price: "₹1599.00",
+      originalPrice: "",
+      description: "A premium lithophane creation that transforms your photo into a breathtaking glowing moon.",
+      category: "lamps",
       features: [
-        "Instant removal of old & new stains",
-        "Fresh orange fragrance",
-        "Effective on oil, grease, ink, rust, food stains, toilet yellow stains, and hard-water spots",
-        "Safe for steel, plastic, ceramics, glass, vehicle bodies, tiles, and more",
-        "Streak-free finish for glass and shiny surfaces",
-
+        "Fully customizable with your photo",
+        "Stunning moon-like surface texture",
+        "Creates a magical, ambient glow",
+        "Material: High-quality 3D-printed lithophane",
+        "Available in 12, 14, 16, 18 cm",
       ],
-      reviews: 156,
+      reviews: 124,
     },
     {
       id: 3,
-      name: "Aluminium & Steel Hard Cleaner 300ml",
-      image: "/assets/hardcleaner01.jpeg",
-      price: "₹499.00",
-      originalPrice: "₹999.00",
-      description: "Powerful cleaner for tough grime and dirt",
-      category: "hard-cleaner",
+      name: "Magic Keychain",
+      image: "/keychain.jpeg",
+      price: "₹250.00",
+      originalPrice: "",
+      description: "Turn your favorite photo into a beautiful 3D-printed lithophane keychain.",
+      category: "keychains",
       features: [
-        "Removes tough grime and dirt",
-        "Fresh fragrance",
-        "Safe for various surfaces",
-        "Leaves surfaces clean and refreshed",
-
+        "Fully customizable with your photo",
+        "Reveals image beautifully under light",
+        "Lightweight and durable",
+        "Size: 35 × 45 mm",
+        "finish: Smooth, matte white",
       ],
-      reviews: 89,
+      reviews: 215,
     }
-
   ]
 
   return (
@@ -128,7 +123,7 @@ export default function KlitzoLanding() {
             {/* Logo */}
             <div className="flex items-center">
               <Link href="/">
-                <img src="/klitzo-logo.png" alt="KLITZO Logo" className="h-10 w-auto cursor-pointer" />
+                <img src="/rglogo.png" alt="Replique Gifts Logo" className="h-12 w-auto" />
               </Link>
             </div>
 
@@ -137,25 +132,25 @@ export default function KlitzoLanding() {
               <div className="ml-10 flex items-baseline space-x-8">
                 <Link
                   href="/"
-                  className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   Home
                 </Link>
                 <Link
                   href="/products"
-                  className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   Products
                 </Link>
                 <Link
                   href="/about"
-                  className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   About
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   Contact
                 </Link>
@@ -165,7 +160,7 @@ export default function KlitzoLanding() {
             {/* Desktop CTA Button */}
             <div className="hidden md:block">
               <Link href="/product/1">
-                <Button className="bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <Button className="bg-black text-white hover:bg-zinc-800 px-6 py-2 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                   Shop Now
                 </Button>
               </Link>
@@ -225,43 +220,35 @@ export default function KlitzoLanding() {
 
       {/* Animated Background Elements */}
       <div className="fixed inset-0 pointer-events-none">
-        <div className="absolute top-20 left-10 w-32 h-32 bg-gradient-to-br from-teal-200/20 to-teal-400/20 rounded-full animate-pulse"></div>
+        <div className="absolute top-20 left-10 w-32 h-32 bg-zinc-100 rounded-full animate-pulse opacity-50"></div>
         <div
-          className="absolute top-40 right-20 w-24 h-24 bg-gradient-to-br from-blue-200/20 to-blue-400/20 rounded-full animate-bounce"
+          className="absolute top-40 right-20 w-24 h-24 bg-zinc-200 rounded-full animate-bounce opacity-30"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
-          className="absolute bottom-40 left-1/4 w-20 h-20 bg-gradient-to-br from-teal-300/20 to-blue-300/20 rounded-full animate-pulse"
+          className="absolute bottom-40 left-1/4 w-20 h-20 bg-zinc-100 rounded-full animate-pulse opacity-40"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute bottom-20 right-1/3 w-28 h-28 bg-gradient-to-br from-blue-300/20 to-teal-300/20 rounded-full animate-bounce"
+          className="absolute bottom-20 right-1/3 w-28 h-28 bg-zinc-200 rounded-full animate-bounce opacity-30"
           style={{ animationDelay: "0.5s" }}
-        ></div>
-        <div
-          className="absolute bottom-20 left-1/4 w-64 h-1 bg-gradient-to-r from-transparent via-teal-500/30 to-transparent rotate-45 animate-pulse"
-          style={{ animationDelay: "1.5s" }}
         ></div>
 
         {/* Vertical animated lines */}
         <div
-          className="absolute top-0 left-1/4 w-1 h-full bg-gradient-to-b from-transparent via-teal-400/20 to-transparent animate-pulse"
+          className="absolute top-0 left-1/4 w-px h-full bg-gradient-to-b from-transparent via-zinc-200 to-transparent animate-pulse"
           style={{ animationDelay: "3s" }}
         ></div>
         <div
-          className="absolute top-0 right-1/3 w-1 h-full bg-gradient-to-b from-transparent via-blue-400/20 to-transparent animate-pulse"
+          className="absolute top-0 right-1/3 w-px h-full bg-gradient-to-b from-transparent via-zinc-200 to-transparent animate-pulse"
           style={{ animationDelay: "2.5s" }}
         ></div>
-
-        {/* Moving lines animation */}
-        <div className="absolute top-1/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-teal-400/40 to-transparent animate-slide-right"></div>
-        <div className="absolute top-3/4 left-0 w-full h-px bg-gradient-to-r from-transparent via-blue-400/40 to-transparent animate-slide-left"></div>
       </div>
 
       {/* Hero Section */}
       {/* Hero Section - 2 Products Side-by-Side on ALL Devices (including Mobile) */}
-      <section className="relative min-h-screen flex items-center px-4 pt-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-slate-100/80 via-blue-50/60 to-teal-50/80 backdrop-blur-sm"></div>
+      <section className="relative min-h-screen flex items-center px-4 pt-20 overflow-hidden bg-white">
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_var(--tw-gradient-stops))] from-zinc-100/50 via-white to-white"></div>
 
         <div className="max-w-7xl mx-auto w-full relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
@@ -269,27 +256,26 @@ export default function KlitzoLanding() {
             {/* Left: Hero Text */}
             <div className="space-y-8 text-center lg:text-left order-2 lg:order-1">
               <div className={`transform transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-800 leading-tight">
-                  Cleaning Made Simple
+                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-black leading-tight tracking-tight">
+                  Memories, <span className="text-zinc-500">Illuminated.</span>
                 </h1>
               </div>
 
               <div className={`transform transition-all duration-1000 delay-200 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
-                <p className="text-lg sm:text-xl lg:text-2xl text-slate-700 font-light max-w-2xl mx-auto lg:mx-0">
-                  Remove toughest stains instantly — oil, grease, rust, ink, toilet stains & more.
-                  Just spray, wipe, and watch the magic!
+                <p className="text-lg sm:text-xl lg:text-2xl text-zinc-600 font-light max-w-2xl mx-auto lg:mx-0">
+                  Transform your favorite photos into breathtaking glowing lithophanes. A premium gift that holds emotions like no other.
                 </p>
               </div>
 
               <div className={`transform transition-all duration-1000 delay-500 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                   <Link href="/product/1">
-                    <Button size="lg" className="bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white px-10 py-6 text-lg rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
-                      Shop Now <Sparkles className="ml-2 h-5 w-5" />
+                    <Button size="lg" className="bg-black text-white hover:bg-zinc-800 px-10 py-6 text-lg rounded-full shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300">
+                      Shop Collection <Sparkles className="ml-2 h-5 w-5" />
                     </Button>
                   </Link>
                   <Link href="/about">
-                    <Button variant="outline" size="lg" className="border-2 border-teal-500 text-teal-600 hover:bg-teal-500 hover:text-white px-10 py-6 text-lg rounded-full backdrop-blur-sm">
+                    <Button variant="outline" size="lg" className="border-2 border-black text-black hover:bg-black hover:text-white px-10 py-6 text-lg rounded-full">
                       Learn More
                     </Button>
                   </Link>
@@ -308,7 +294,7 @@ export default function KlitzoLanding() {
                   >
                     <Card className="group bg-white/95 backdrop-blur-xl border-0 py-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 rounded-3xl overflow-hidden">
                       {/* Product Image */}
-                      <div className="relative bg-gradient-to-b from-teal-50/50 to-blue-50/30">
+                      <div className="relative bg-zinc-50">
                         <img
                           src={product.image}
                           alt={product.name}
@@ -318,17 +304,17 @@ export default function KlitzoLanding() {
 
                       {/* Product Info */}
                       <CardContent className="p-1 sm:p-2 text-center space-y-3">
-                        <h3 className="text-[10px] whitespace-nowrap sm:text-[15px] font-bold text-slate-800 line-clamp-2">
+                        <h3 className="text-[10px] whitespace-nowrap sm:text-[15px] font-bold text-zinc-900 line-clamp-2">
                           {product.name}
                         </h3>
 
                         <div className="flex items-center justify-center gap-2">
-                          <span className="text-xl sm:text-xl font-bold text-teal-600">{product.price}</span>
-                          <span className="text-xs sm:text-md text-slate-400 line-through">{product.originalPrice}</span>
+                          <span className="text-xl sm:text-xl font-bold text-black">{product.price}</span>
+                          <span className="text-xs sm:text-md text-zinc-400 line-through">{product.originalPrice}</span>
                         </div>
 
                         <Link href={`/product/${product.id}`}>
-                          <Button className="w-full bg-gradient-to-r cursor-pointer from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white rounded-full text-sm sm:text-base py-1 sm:py-4 font-medium transform hover:scale-105 transition-all duration-300">
+                          <Button className="w-full bg-black cursor-pointer hover:bg-zinc-800 text-white rounded-full text-sm sm:text-base py-1 sm:py-4 font-medium transform hover:scale-105 transition-all duration-300">
                             Buy Now
                           </Button>
                         </Link>
@@ -345,9 +331,9 @@ export default function KlitzoLanding() {
       {/* Product Highlights Section */}
       <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-slate-800 mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-16">
             Why Choose{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">KLITZO</span>?
+            <span className="text-zinc-500">Replique Gifts</span>?
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -357,12 +343,12 @@ export default function KlitzoLanding() {
                 className={`transform transition-all duration-700 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}
                 style={{ transitionDelay: feature.delay }}
               >
-                <Card onClick={() => setOpenFeature(openFeature === index ? null : index)} className=" p-6 pb-0  cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-gradient-to-br from-slate-50 to-blue-50 group ">
+                <Card onClick={() => setOpenFeature(openFeature === index ? null : index)} className=" p-6 pb-0  cursor-pointer hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-0 bg-zinc-50 group ">
                   <CardContent className="flex items-center space-x-4 p-0">
-                    <div className="p-3 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 group-hover:scale-110 transition-transform duration-300">
+                    <div className="p-3 rounded-full bg-black group-hover:scale-110 transition-transform duration-300">
                       <feature.icon className="h-6 w-6 text-white" />
                     </div>
-                    <p className="text-lg font-semibold text-slate-700 group-hover:text-slate-900 transition-colors">
+                    <p className="text-lg font-semibold text-zinc-800 group-hover:text-black transition-colors">
                       {feature.text}
                     </p>
                   </CardContent>
@@ -370,7 +356,7 @@ export default function KlitzoLanding() {
                   <div
                     className={`overflow-hidden transition-all duration-500 ${openFeature === index ? "max-h-40 opacity-100 " : "max-h-0 opacity-0 mt-0 "}`}
                   >
-                    <p className="text-xs pb-6 font-semibold text-slate-700 group-hover:text-slate-900 transition-colors duration-300">
+                    <p className="text-xs pb-6 font-semibold text-zinc-600 group-hover:text-zinc-900 transition-colors duration-300">
                       {feature.content}
                     </p>
                   </div>
@@ -382,11 +368,11 @@ export default function KlitzoLanding() {
       </section>
 
       {/* Products Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="py-20 px-4 bg-zinc-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold text-center text-slate-800 mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-16">
             Our{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-600">Products</span>
+            <span className="text-zinc-500">Products</span>
           </h2>
 
           {/* <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"> */}
@@ -406,78 +392,78 @@ export default function KlitzoLanding() {
               {/* min-w-max prevents compression */}
               {products.map((product, index) => (
                 <Link href={`/product/${product.id}`}>
-                <div
-                  key={product.id}
-                  className="flex-none w-[280px] sm:w-[330px] lg:w-[360px]"
-                  style={{ transitionDelay: `${index * 100}ms` }}
-                >
-                  <Card
-                    className={` group py-0 gap-0 cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 bg-white overflow-hidden transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                      }`}
+                  <div
+                    key={product.id}
+                    className="flex-none w-[280px] sm:w-[330px] lg:w-[360px]"
+                    style={{ transitionDelay: `${index * 100}ms` }}
                   >
-                    
-                    {/* Your existing card content (image, badge, button, etc.) */}
-                    <div className="relative overflow-hidden">
-                      <img
-                        src={product.image || "/placeholder.svg"}
-                        alt={product.name}
-                        className="w-full h-48 sm:h-56 object-contain group-hover:scale-110 transition-transform duration-500"
-                      />
-                      {product.originalPrice && (
-                        <Badge className="absolute top-4 left-4 bg-red-500 text-white text-xs">
-                          50% OFF
-                        </Badge>
-                      )}
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                      <Link href={`/product/${product.id}`}>
-                        <Button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 scale-90 group-hover:scale-100">
-                          View Details
-                        </Button>
-                      </Link>
-                    </div>
-                
+                    <Card
+                      className={` group py-0 gap-0 cursor-pointer border-0 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 bg-white overflow-hidden transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                        }`}
+                    >
 
-                    <CardContent className="p-4">
-                      <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-teal-600 transition-colors line-clamp-2">
-                        {product.name}
-                      </h3>
-                      <p className="text-slate-600 text-sm mb-3 line-clamp-2">
-                        {product.description}
-                      </p>
-
-                      <div className="hidden sm:flex flex-col gap-2 mb-4">
-                        {product.features.slice(0, 2).map((feature, idx) => (
-                          <div key={idx} className="flex items-center text-sm text-slate-600">
-                            <Sparkles className="h-4 w-4 text-teal-500 mr-2" />
-                            {feature}
-                          </div>
-                        ))}
-                      </div>
-
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center gap-2">
-                          <Badge className="bg-gradient-to-r from-teal-500 to-blue-600 text-white text-sm px-3">
-                            {product.price}
+                      {/* Your existing card content (image, badge, button, etc.) */}
+                      <div className="relative overflow-hidden">
+                        <img
+                          src={product.image || "/placeholder.svg"}
+                          alt={product.name}
+                          className="w-full h-48 sm:h-56 object-contain group-hover:scale-110 transition-transform duration-500"
+                        />
+                        {product.originalPrice && (
+                          <Badge className="absolute top-4 left-4 bg-black text-white text-xs">
+                            SALE
                           </Badge>
-                          {product.originalPrice && (
-                            <span className="text-slate-400 line-through text-sm">
-                              {product.originalPrice}
-                            </span>
-                          )}
-                        </div>
+                        )}
+                        <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                         <Link href={`/product/${product.id}`}>
-                          <Button
-                            variant="outline"
-                            size="sm"
-                            className="hidden sm:block border-teal-500 text-teal-600 hover:bg-teal-500 hover:text-white"
-                          >
-                            View Product
+                          <Button className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-black text-white hover:bg-zinc-800 scale-90 group-hover:scale-100">
+                            View Details
                           </Button>
                         </Link>
                       </div>
-                    </CardContent>
-                  </Card>
-                </div>
+
+
+                      <CardContent className="p-4">
+                        <h3 className="text-lg font-bold text-black mb-2 group-hover:text-zinc-600 transition-colors line-clamp-2">
+                          {product.name}
+                        </h3>
+                        <p className="text-slate-600 text-sm mb-3 line-clamp-2">
+                          {product.description}
+                        </p>
+
+                        <div className="hidden sm:flex flex-col gap-2 mb-4">
+                          {product.features.slice(0, 2).map((feature, idx) => (
+                            <div key={idx} className="flex items-center text-sm text-zinc-600">
+                              <Sparkles className="h-4 w-4 text-black mr-2" />
+                              {feature}
+                            </div>
+                          ))}
+                        </div>
+
+                        <div className="flex items-center justify-between">
+                          <div className="flex items-center gap-2">
+                            <Badge className="bg-black text-white text-sm px-3">
+                              {product.price}
+                            </Badge>
+                            {product.originalPrice && (
+                              <span className="text-zinc-400 line-through text-sm">
+                                {product.originalPrice}
+                              </span>
+                            )}
+                          </div>
+                          <Link href={`/product/${product.id}`}>
+                            <Button
+                              variant="outline"
+                              size="sm"
+                              className="hidden sm:block border-black text-black hover:bg-black hover:text-white"
+                            >
+                              View Product
+                            </Button>
+                          </Link>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </div>
                 </Link>
               ))}
             </div>
@@ -486,13 +472,12 @@ export default function KlitzoLanding() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 px-4 bg-slate-50">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">Get in Touch</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Have questions about our products? Need bulk orders? We're here to help you find the perfect cleaning
-              solution.
+            <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">Get in Touch</h2>
+            <p className="text-xl text-zinc-600 max-w-3xl mx-auto">
+              Have questions about our personalized lithophane products? We're here to help you create the perfect gift.
             </p>
           </div>
 
@@ -503,34 +488,34 @@ export default function KlitzoLanding() {
                 <h3 className="text-2xl font-bold text-slate-800 mb-6">Contact Information</h3>
                 <div className="space-y-6">
                   <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-gradient-to-r from-teal-500 to-blue-600 rounded-full">
+                    <div className="p-3 bg-black rounded-full">
                       <Phone className="h-6 w-6 text-white" />
                     </div>
                     <div>
                       <p className="font-semibold text-slate-800">Phone</p>
-                      <p className="text-slate-600">+91 8111813853</p>
+                      <p className="text-slate-600">+91 9846131001</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-gradient-to-r from-teal-500 to-blue-600 rounded-full">
+                    <div className="p-3 bg-black rounded-full">
                       <Mail className="h-6 w-6 text-white" />
                     </div>
                     <div>
                       <p className="font-semibold text-slate-800">Email</p>
-                      <p className="text-slate-600"> klitzo.info@gmail.com</p>
+                      <p className="text-slate-600">repliquegifts@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-gradient-to-r from-teal-500 to-blue-600 rounded-full">
+                    <div className="p-3 bg-black rounded-full">
                       <MapPin className="h-6 w-6 text-white" />
                     </div>
                     <div>
                       <p className="font-semibold text-slate-800">Address</p>
-                      <p className="text-slate-600">Inkel City, Malappuram – 676519, Kerala, India</p>
+                      <p className="text-slate-600">Vengara, Malappuram, Kerala, India</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-4">
-                    <div className="p-3 bg-gradient-to-r from-teal-500 to-blue-600 rounded-full">
+                    <div className="p-3 bg-black rounded-full">
                       <Clock className="h-6 w-6 text-white" />
                     </div>
                     <div>
@@ -562,7 +547,7 @@ export default function KlitzoLanding() {
                   const message = (form.get("message") || "").toString().trim()
 
                   const text = [
-                    "New message from KLITZO website:",
+                    "New message from Replique Gifts website:",
                     `First Name: ${first}`,
                     `Last Name: ${last}`,
                     `Email: ${email}`,
@@ -571,8 +556,8 @@ export default function KlitzoLanding() {
                     `Message: ${message}`,
                   ].join("\n")
 
-                  // WhatsApp number in international format without plus: 918111813853
-                  const waNumber = "918111813853"
+                  // WhatsApp number in international format without plus: 919846131001
+                  const waNumber = "919846131001"
                   const waUrl = `https://wa.me/${waNumber}?text=${encodeURIComponent(text)}`
 
                   window.open(waUrl, "_blank")
@@ -584,7 +569,7 @@ export default function KlitzoLanding() {
                     <input
                       name="first"
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
                       placeholder="John"
                     />
                   </div>
@@ -593,7 +578,7 @@ export default function KlitzoLanding() {
                     <input
                       name="last"
                       type="text"
-                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300"
+                      className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
                       placeholder="Doe"
                     />
                   </div>
@@ -604,7 +589,7 @@ export default function KlitzoLanding() {
                   <input
                     name="email"
                     type="email"
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
                     placeholder="john@example.com"
                   />
                 </div>
@@ -614,7 +599,7 @@ export default function KlitzoLanding() {
                   <input
                     name="phone"
                     type="tel"
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
                     placeholder="+91 9876543210"
                   />
                 </div>
@@ -624,7 +609,7 @@ export default function KlitzoLanding() {
                   <input
                     name="subject"
                     type="text"
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300"
+                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
                     placeholder="Product Inquiry"
                   />
                 </div>
@@ -634,14 +619,14 @@ export default function KlitzoLanding() {
                   <textarea
                     name="message"
                     rows={4}
-                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-300"
-                    placeholder="Tell us about your cleaning needs..."
+                    className="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-black focus:border-transparent transition-all duration-300"
+                    placeholder="Tell us about your custom gift needs..."
                   />
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-teal-600 to-blue-700 hover:from-teal-700 hover:to-blue-800 text-white py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
+                  className="w-full bg-black hover:bg-zinc-800 text-white py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105"
                 >
                   Send Message
                   <Send className="ml-2 h-5 w-5" />

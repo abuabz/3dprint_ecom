@@ -17,25 +17,25 @@ export default function AboutPage() {
   const values = [
     {
       icon: Shield,
-      title: "Quality First",
+      title: "Quality Craftsmanship",
       description:
-        "We never compromise on quality. Every KLITZO product undergoes rigorous testing to ensure superior performance.",
+        "Every piece is 3D printed with precision and critically inspected to ensure your memory is captured perfectly.",
     },
     {
       icon: Leaf,
-      title: "Eco-Friendly",
+      title: "Eco-Friendly Materials",
       description:
-        "Our commitment to the environment drives us to create biodegradable, sustainable cleaning solutions.",
+        "We use PLA, a biodegradable and bioactive thermoplastic derived from renewable resources like corn starch.",
     },
     {
       icon: Heart,
-      title: "Customer Care",
-      description: "Your satisfaction is our priority. We're here to support you with exceptional customer service.",
+      title: "Created with Love",
+      description: "We treat every photo with the respect it deserves, understanding the emotional value behind your order.",
     },
     {
       icon: Target,
       title: "Innovation",
-      description: "We continuously research and develop cutting-edge cleaning technologies for better results.",
+      description: "We continuously refine our lithophane generation algorithms and printing techniques for the best details.",
     },
   ]
 
@@ -49,12 +49,12 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-white">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-white/10 border-b border-white/20 shadow-lg">
+      <nav className="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/80 border-b border-zinc-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
               <Link href="/">
-                <img src="/klitzo-logo.png" alt="KLITZO Logo" className="h-10 w-auto cursor-pointer" />
+                <img src="/rglogo.png" alt="Replique Gifts Logo" className="h-12 w-auto invert" />
               </Link>
             </div>
 
@@ -62,22 +62,22 @@ export default function AboutPage() {
               <div className="ml-10 flex items-baseline space-x-8">
                 <Link
                   href="/"
-                  className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-zinc-400 hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   Home
                 </Link>
-                <Link
-                  href="/products"
-                  className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
-                >
+                <Link href="/products" className="text-zinc-400 hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-300">
                   Products
                 </Link>
-                <Link href="/about" className="text-teal-600 px-3 py-2 text-sm font-medium">
+                <Link
+                  href="/about"
+                  className="text-white px-3 py-2 text-sm font-medium"
+                >
                   About
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-slate-700 hover:text-teal-600 px-3 py-2 text-sm font-medium transition-colors duration-300"
+                  className="text-zinc-400 hover:text-white px-3 py-2 text-sm font-medium transition-colors duration-300"
                 >
                   Contact
                 </Link>
@@ -86,7 +86,7 @@ export default function AboutPage() {
 
             <div className="hidden md:block">
               <Link href="/products">
-                <Button className="bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white px-6 py-2 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+                <Button className="bg-white text-black hover:bg-zinc-200 px-6 py-2 rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                   Shop Now
                 </Button>
               </Link>
@@ -95,7 +95,7 @@ export default function AboutPage() {
             <div className="md:hidden">
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="text-slate-700 hover:text-teal-600 p-2 rounded-md transition-colors duration-300"
+                className="text-zinc-400 hover:text-white p-2 rounded-md transition-colors duration-300"
               >
                 {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
               </button>
@@ -103,26 +103,26 @@ export default function AboutPage() {
           </div>
 
           {isMobileMenuOpen && (
-            <div className="md:hidden backdrop-blur-md bg-white/20 border-t border-white/20 rounded-b-lg mt-2">
+            <div className="md:hidden backdrop-blur-md bg-zinc-900/90 border-t border-zinc-800">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <Link
                   href="/"
-                  className="text-slate-700 hover:text-teal-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                  className="text-zinc-400 hover:text-white block px-3 py-2 text-base font-medium transition-colors duration-300"
                 >
                   Home
                 </Link>
-                <Link
-                  href="/products"
-                  className="text-slate-700 hover:text-teal-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
-                >
+                <Link href="/products" className="text-zinc-400 hover:text-white block px-3 py-2 text-base font-medium transition-colors duration-300">
                   Products
                 </Link>
-                <Link href="/about" className="text-teal-600 block px-3 py-2 text-base font-medium">
+                <Link
+                  href="/about"
+                  className="text-white block px-3 py-2 text-base font-medium"
+                >
                   About
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-slate-700 hover:text-teal-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                  className="text-zinc-400 hover:text-white block px-3 py-2 text-base font-medium transition-colors duration-300"
                 >
                   Contact
                 </Link>
@@ -133,42 +133,44 @@ export default function AboutPage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-24 pb-16 px-4 bg-gradient-to-br from-slate-50 to-blue-50">
+      <section className="pt-24 pb-16 px-4 bg-zinc-950">
         <div className="max-w-6xl mx-auto text-center">
           <div
             className={`transform transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
           >
-            <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-600 to-blue-800 mb-6">
-              About KLITZO
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+              About Replique Gifts
             </h1>
-            <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-              Pioneering the future of cleaning with innovative, eco-friendly solutions that make your life easier and
-              your home cleaner.
+            <p className="text-xl text-zinc-400 mb-8 max-w-3xl mx-auto">
+              Illuminating your most cherished memories with precision, passion, and advanced 3D printing technology.
             </p>
           </div>
         </div>
       </section>
 
       {/* Our Story */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div
               className={`transform transition-all duration-1000 ${isVisible ? "translate-x-0 opacity-100" : "-translate-x-10 opacity-0"}`}
             >
-              <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Our Story</h2>
-              <p className="text-lg text-slate-600 mb-6 leading-relaxed">
-              KLITZO was created with one vision: to make cleaning simple, powerful, and universal. Combining advanced US technology with Indian manufacturing excellence, KLITZO delivers world-class cleaning performance in every spray
+              <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Story</h2>
+              <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
+                Replique Gifts began with a simple idea: that a photograph is more than just an image; it's a frozen moment of time, an emotion, a memory. We wanted to find a way to bring these memories to life in a tangible, beautiful way.
+              </p>
+              <p className="text-lg text-zinc-400 mb-6 leading-relaxed">
+                Using cutting-edge lithophane technology and high-quality 3D printing, we transform standard photos into textured masterpieces that reveal their true beauty when illuminated. From our signature Moon Lamps to our portable Magic Keychains, every product is crafted with care to ensure your memories shine bright.
               </p>
             </div>
             <div
               className={`transform transition-all duration-1000 delay-300 ${isVisible ? "translate-x-0 opacity-100" : "translate-x-10 opacity-0"}`}
             >
-              <div className="bg-gradient-to-br from-teal-100 to-blue-100 rounded-2xl p-8">
+              <div className="bg-zinc-900 rounded-2xl p-8 border border-zinc-800">
                 <img
-                  src="/modern-cleaning-lab.png"
-                  alt="KLITZO Laboratory"
-                  className="w-full h-64 object-cover rounded-lg shadow-lg"
+                  src="/coverimg.jpeg"
+                  alt="Replique Gifts Workshop"
+                  className="w-full h-64 object-cover rounded-lg shadow-lg opacity-80"
                 />
               </div>
             </div>
@@ -176,31 +178,13 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Stats Section */}
-      {/* <section className="py-16 px-4 bg-gradient-to-r from-teal-600 to-blue-700">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
-            {stats.map((stat, index) => (
-              <div
-                key={index}
-                className={`transform transition-all duration-1000 ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"}`}
-                style={{ transitionDelay: `${index * 200}ms` }}
-              >
-                <div className="text-4xl md:text-5xl font-bold text-white mb-2">{stat.number}</div>
-                <div className="text-blue-100 text-lg">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
-
       {/* Our Values */}
-      <section className="py-16 px-4">
+      <section className="py-16 px-4 bg-zinc-950">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-slate-800 mb-6">Our Values</h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              These core principles guide everything we do at KLITZO, from product development to customer service.
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Our Values</h2>
+            <p className="text-xl text-zinc-400 max-w-3xl mx-auto">
+              These core principles guide everything we do at Replique Gifts.
             </p>
           </div>
 
@@ -208,16 +192,15 @@ export default function AboutPage() {
             {values.map((value, index) => (
               <Card
                 key={index}
-                className={`p-6 text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-0 bg-gradient-to-br from-slate-50 to-blue-50 group transform ${
-                  isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                }`}
+                className={`p-6 text-center hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border-zinc-800 bg-zinc-900 group transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                  }`}
                 style={{ transitionDelay: `${index * 150}ms` }}
               >
-                <div className="p-4 rounded-full bg-gradient-to-r from-teal-500 to-blue-600 w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <value.icon className="h-8 w-8 text-white" />
+                <div className="p-4 rounded-full bg-white w-16 h-16 mx-auto mb-4 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                  <value.icon className="h-8 w-8 text-black" />
                 </div>
-                <h3 className="text-xl font-bold text-slate-800 mb-3">{value.title}</h3>
-                <p className="text-slate-600 leading-relaxed">{value.description}</p>
+                <h3 className="text-xl font-bold text-white mb-3">{value.title}</h3>
+                <p className="text-zinc-400 leading-relaxed">{value.description}</p>
               </Card>
             ))}
           </div>
@@ -225,30 +208,26 @@ export default function AboutPage() {
       </section>
 
       {/* Mission & Vision */}
-      <section className="py-16 px-4 bg-slate-50">
+      <section className="py-16 px-4 bg-black">
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12">
-            <Card className="p-8 border-0 shadow-lg">
+            <Card className="p-8 border-zinc-800 bg-zinc-900 shadow-lg">
               <div className="flex items-center mb-6">
-                <Target className="h-8 w-8 text-teal-600 mr-3" />
-                <h3 className="text-2xl font-bold text-slate-800">Our Mission</h3>
+                <Target className="h-8 w-8 text-white mr-3" />
+                <h3 className="text-2xl font-bold text-white">Our Mission</h3>
               </div>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                To revolutionize the cleaning industry by providing innovative, eco-friendly products that deliver
-                exceptional results while protecting the health of families and the environment. We strive to make
-                cleaning simple, effective, and sustainable for everyone.
+              <p className="text-lg text-zinc-400 leading-relaxed">
+                To create personalized gifts that evoke emotion and connection. We strive to combine art and technology to turn your digital memories into lasting physical treasures that light up lives.
               </p>
             </Card>
 
-            <Card className="p-8 border-0 shadow-lg">
+            <Card className="p-8 border-zinc-800 bg-zinc-900 shadow-lg">
               <div className="flex items-center mb-6">
-                <Award className="h-8 w-8 text-blue-600 mr-3" />
-                <h3 className="text-2xl font-bold text-slate-800">Our Vision</h3>
+                <Award className="h-8 w-8 text-white mr-3" />
+                <h3 className="text-2xl font-bold text-white">Our Vision</h3>
               </div>
-              <p className="text-lg text-slate-600 leading-relaxed">
-                To become the world's most trusted cleaning brand, known for our commitment to quality, innovation, and
-                environmental stewardship. We envision a future where every home and business can achieve perfect
-                cleanliness without compromising on safety or sustainability.
+              <p className="text-lg text-zinc-400 leading-relaxed">
+                To be the leading provider of custom lithophane products, known for innovation, quality, and the ability to "bring light to memories" in homes across the world.
               </p>
             </Card>
           </div>
