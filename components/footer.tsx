@@ -74,7 +74,7 @@ export default function Footer() {
                     />
                   </svg>
                 </a>
-                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors duration-300">
+                <a href="https://www.instagram.com/replique_gifts?igsh=MW50ZjJ4ZDVqaGI3aQ==" target="_blank" rel="noopener noreferrer" className="p-2 rounded-full bg-zinc-900 hover:bg-zinc-800 transition-colors duration-300">
                   <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <rect width="20" height="20" x="2" y="2" rx="5" strokeWidth={2} stroke="currentColor" fill="none" />
                     <circle cx="12" cy="12" r="5" strokeWidth={2} stroke="currentColor" fill="none" />
