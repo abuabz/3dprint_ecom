@@ -282,7 +282,7 @@ export default function ProductPage() {
         </div>
       </nav>
 
-      <section className="pt-20 pb-4 px-4 bg-zinc-50 border-b border-zinc-100">
+      <section className="pt-20 md:pt-28 pb-4 px-4 bg-zinc-50 border-b border-zinc-100">
         <div className="max-w-6xl mx-auto">
           <div className="flex items-center space-x-2 text-sm text-zinc-500">
             <Link href="/" className="hover:text-black transition-colors">

@@ -226,69 +226,68 @@ export default function ProductsPage() {
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProducts.map((product, index) => (
-              <Card
+              <Link
                 key={product.id}
-                className={`group p-0 cursor-pointer border-zinc-800 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 bg-zinc-900 overflow-hidden transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
-                  }`}
-                style={{ transitionDelay: `${index * 100}ms` }}
+                href={`/product/${product.id}`}
+                className="group block"
               >
-                <div className="relative overflow-hidden">
-                  <img
-                    src={product.image || "/placeholder.svg"}
-                    alt={product.name}
-                    className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500 bg-zinc-800"
-                  />
-                  {product.originalPrice && (
-                    <Badge className="absolute top-4 left-4 bg-white text-black font-bold">
-                      Save ₹
-                      {(
-                        Number.parseFloat(product.originalPrice.slice(1)) - Number.parseFloat(product.price.slice(1))
-                      ).toFixed(2)}
-                    </Badge>
-                  )}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  <Link href={`/product/${product.id}`}>
-                    <Button className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-black hover:bg-zinc-200 scale-90 group-hover:scale-100 border-none">
-                      View Details
-                    </Button>
-                  </Link>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold text-white mb-2 group-hover:text-zinc-300 transition-colors">
-                    {product.name}
-                  </h3>
-                  <p className="text-zinc-400 mb-4">{product.description}</p>
-
-                  <div className="space-y-2 mb-4">
-                    {product.features.slice(0, 2).map((feature, idx) => (
-                      <div key={idx} className="flex items-center text-sm text-zinc-500">
-                        <Sparkles className="h-4 w-4 text-white mr-2" />
-                        {feature}
-                      </div>
-                    ))}
-                  </div>
-
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center gap-2">
-                      <Badge className="bg-white text-black px-3 py-1 text-lg">
-                        {product.price}
+                <Card
+                  className={`p-0 cursor-pointer border-zinc-800 shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-4 bg-zinc-900 overflow-hidden transform ${isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+                    }`}
+                  style={{ transitionDelay: `${index * 100}ms` }}
+                >
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={product.image || "/placeholder.svg"}
+                      alt={product.name}
+                      className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500 bg-zinc-800"
+                    />
+                    {product.originalPrice && (
+                      <Badge className="absolute top-4 left-4 bg-white text-black font-bold">
+                        Save ₹
+                        {(
+                          Number.parseFloat(product.originalPrice.slice(1)) - Number.parseFloat(product.price.slice(1))
+                        ).toFixed(2)}
                       </Badge>
-                      {product.originalPrice && (
-                        <span className="text-zinc-600 line-through text-sm">{product.originalPrice}</span>
-                      )}
+                    )}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-all duration-300 bg-white text-black hover:bg-zinc-200 scale-90 group-hover:scale-100 border-none inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2">
+                      View Details
                     </div>
-                    <Link href={`/product/${product.id}`}>
-                      <Button
-                        variant="outline"
-                        size="sm"
-                        className="border-zinc-700 text-zinc-400 hover:bg-white hover:text-black transition-all duration-300 bg-transparent"
+                  </div>
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold text-white mb-2 group-hover:text-zinc-300 transition-colors">
+                      {product.name}
+                    </h3>
+                    <p className="text-zinc-400 mb-4">{product.description}</p>
+
+                    <div className="space-y-2 mb-4">
+                      {product.features.slice(0, 2).map((feature, idx) => (
+                        <div key={idx} className="flex items-center text-sm text-zinc-500">
+                          <Sparkles className="h-4 w-4 text-white mr-2" />
+                          {feature}
+                        </div>
+                      ))}
+                    </div>
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-2">
+                        <Badge className="bg-white text-black px-3 py-1 text-lg">
+                          {product.price}
+                        </Badge>
+                        {product.originalPrice && (
+                          <span className="text-zinc-600 line-through text-sm">{product.originalPrice}</span>
+                        )}
+                      </div>
+                      <div
+                        className="border border-zinc-700 text-zinc-400 hover:bg-white hover:text-black transition-all duration-300 bg-transparent inline-flex items-center justify-center rounded-md text-sm font-medium h-9 px-3"
                       >
                         View Product
-                      </Button>
-                    </Link>
-                  </div>
-                </CardContent>
-              </Card>
+                      </div>
+                    </div>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
 
