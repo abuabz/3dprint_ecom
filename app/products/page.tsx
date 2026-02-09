@@ -236,7 +236,7 @@ export default function ProductsPage() {
                   <img
                     src={product.image || "/placeholder.svg"}
                     alt={product.name}
-                    className="w-full h-64 object-contain group-hover:scale-110 transition-transform duration-500 bg-zinc-800"
+                    className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500 bg-zinc-800"
                   />
                   {product.originalPrice && (
                     <Badge className="absolute top-4 left-4 bg-white text-black font-bold">
@@ -303,23 +303,7 @@ export default function ProductsPage() {
       </section>
 
       {/* Footer CTA */}
-      <section className="py-16 px-4 bg-zinc-900 border-t border-zinc-800">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Need Help Choosing?</h2>
-          <p className="text-xl text-zinc-400 mb-8">
-            Contact us for personalized gift recommendations
-          </p>
-          <Link href="/contact">
-            <Button
-              size="lg"
-              className="bg-white text-black hover:bg-zinc-200 px-12 py-6 text-xl rounded-full shadow-xl hover:shadow-2xl transform hover:scale-105 transition-all duration-300 hover:-translate-y-1 font-semibold"
-            >
-              Get Expert Advice
-              <Sparkles className="ml-2 h-5 w-5" />
-            </Button>
-          </Link>
-        </div>
-      </section>
+
     </div>
   )
 }

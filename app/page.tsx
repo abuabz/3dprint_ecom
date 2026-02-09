@@ -179,35 +179,39 @@ export default function KlitzoLanding() {
 
           {/* Mobile Navigation Menu */}
           {isMobileMenuOpen && (
-            <div className="md:hidden backdrop-blur-md bg-white/20 border-t border-white/20 rounded-b-lg mt-2">
-              <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="md:hidden absolute top-16 left-0 right-0 bg-white border-t border-zinc-100 shadow-xl animate-in slide-in-from-top-5 duration-300">
+              <div className="flex flex-col p-4 space-y-4">
                 <Link
                   href="/"
-                  className="text-slate-700 hover:text-teal-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-4 py-3 text-lg font-medium transition-colors duration-300 rounded-xl hover:bg-zinc-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Home
                 </Link>
                 <Link
                   href="/products"
-                  className="text-slate-700 hover:text-teal-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-4 py-3 text-lg font-medium transition-colors duration-300 rounded-xl hover:bg-zinc-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Products
                 </Link>
                 <Link
                   href="/about"
-                  className="text-slate-700 hover:text-teal-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-4 py-3 text-lg font-medium transition-colors duration-300 rounded-xl hover:bg-zinc-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   About
                 </Link>
                 <Link
                   href="/contact"
-                  className="text-slate-700 hover:text-teal-600 block px-3 py-2 text-base font-medium transition-colors duration-300"
+                  className="text-zinc-600 hover:text-black px-4 py-3 text-lg font-medium transition-colors duration-300 rounded-xl hover:bg-zinc-50"
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
                   Contact
                 </Link>
-                <div className="px-3 py-2">
-                  <Link href="/products">
-                    <Button className="w-full bg-gradient-to-r from-teal-500 to-blue-600 hover:from-teal-600 hover:to-blue-700 text-white rounded-full shadow-lg">
+                <div className="pt-4 border-t border-zinc-100">
+                  <Link href="/product/1" onClick={() => setIsMobileMenuOpen(false)}>
+                    <Button className="w-full bg-black text-white hover:bg-zinc-800 py-6 text-lg rounded-xl shadow-lg">
                       Shop Now
                     </Button>
                   </Link>
@@ -293,7 +297,7 @@ export default function KlitzoLanding() {
 
             {/* Right: Two Product Cards - Always Side by Side (Even on Mobile) */}
             <div className="order-1 lg:order-2">
-              <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+              {/* <div className="grid grid-cols-2 gap-4 sm:gap-6 md:gap-8">
                 {mainproducts.map((product, index) => (
                   <div
                     key={product.id}
@@ -301,7 +305,6 @@ export default function KlitzoLanding() {
                       }`}
                   >
                     <Card className="group bg-white/95 backdrop-blur-xl border-0 py-0 shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-3 rounded-3xl overflow-hidden">
-                      {/* Product Image */}
                       <div className="relative bg-zinc-50">
                         <img
                           src={product.image}
@@ -310,7 +313,6 @@ export default function KlitzoLanding() {
                         />
                       </div>
 
-                      {/* Product Info */}
                       <CardContent className="p-1 sm:p-2 text-center space-y-3">
                         <h3 className="text-[10px] whitespace-nowrap sm:text-[15px] font-bold text-zinc-900 line-clamp-2">
                           {product.name}
@@ -330,7 +332,7 @@ export default function KlitzoLanding() {
                     </Card>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -415,7 +417,7 @@ export default function KlitzoLanding() {
                         <img
                           src={product.image || "/placeholder.svg"}
                           alt={product.name}
-                          className="w-full h-48 sm:h-56 object-contain group-hover:scale-110 transition-transform duration-500"
+                          className="w-full h-auto sm:h-auto max-h-72 object-cover group-hover:scale-110 transition-transform duration-500"
                         />
                         {product.originalPrice && (
                           <Badge className="absolute top-4 left-4 bg-black text-white text-xs">

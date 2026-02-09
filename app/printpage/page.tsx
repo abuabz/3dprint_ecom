@@ -17,6 +17,7 @@ interface Address {
 export default function PrintPage() {
     const [fromAddress, setFromAddress] = useState<Address>({
         name: 'Replique Gifts',
+        phone: '+91 9846131001',
         address: 'Vengara,Malappuram',
         city: 'Malappuram',
         state: 'Kerala',
@@ -32,16 +33,7 @@ export default function PrintPage() {
         zip: ''
     });
 
-    const [toList, setToList] = useState<Address[]>([
-        { name: 'John Doe', phone: '9876543210', address: '123 Main St, Apt 4B', city: 'New York', state: 'NY', zip: '10001' },
-        { name: 'Jane Smith', phone: '9876543211', address: '456 Oak Avenue', city: 'Los Angeles', state: 'CA', zip: '90001' },
-        { name: 'Michael Brown', phone: '9876543212', address: '789 Pine Road', city: 'Chicago', state: 'IL', zip: '60601' },
-        { name: 'Emily Davis', phone: '9876543213', address: '321 Elm Street', city: 'Houston', state: 'TX', zip: '77001' },
-        { name: 'Chris Wilson', phone: '9876543214', address: '654 Maple Drive', city: 'Phoenix', state: 'AZ', zip: '85001' },
-        { name: 'Sarah Miller', phone: '9876543215', address: '987 Cedar Lane', city: 'Philadelphia', state: 'PA', zip: '19101' },
-        { name: 'David Taylor', phone: '9876543216', address: '159 Birch Court', city: 'San Antonio', state: 'TX', zip: '78201' },
-        { name: 'Jessica Moore', phone: '9876543217', address: '753 Walnut Street', city: 'San Diego', state: 'CA', zip: '92101' }
-    ]);
+    const [toList, setToList] = useState<Address[]>([]);
 
     const [isUploading, setIsUploading] = useState(false);
     const [pendingAddresses, setPendingAddresses] = useState<Address[]>([]);
@@ -145,7 +137,7 @@ export default function PrintPage() {
         setToList(prev => [...prev, ...pendingAddresses]);
         const count = pendingAddresses.length;
         setPendingAddresses([]);
-        toast.success(`Successfully imported ${count} addresses!`);
+        toast.success(`Data Added: Successfully imported ${count} addresses!`);
     };
 
     const cancelImport = () => {
@@ -432,6 +424,7 @@ export default function PrintPage() {
                                                 <div className="hidden print:block ship-from mb-4">
                                                     <p className="text-[20pt] font-semibold text-zinc-500 uppercase">From:</p>
                                                     <p className="font-bold">{fromAddress.name || 'Sender'}</p>
+                                                    <p>{fromAddress.phone || 'N/A'}</p>
                                                     <p>{fromAddress.address}</p>
                                                     <p>{fromAddress.city}, {fromAddress.state} {fromAddress.zip}</p>
                                                 </div>
@@ -440,10 +433,11 @@ export default function PrintPage() {
                                                     <p className="font-bold text-black dark:text-white text-lg">{item.name}</p>
                                                 </div>
                                             </td>
+                                            <td className="px-8 py-6 text-zinc-600 dark:text-zinc-400">{item.phone || 'N/A'}</td>
                                             <td className="px-8 py-6 text-zinc-600 dark:text-zinc-400">
                                                 {item.address}, {item.city}, {item.state} {item.zip}
                                             </td>
-                                            <td className="px-8 py-6 text-zinc-600 dark:text-zinc-400">{item.phone || 'N/A'}</td>
+
                                             <td className="px-8 py-6 text-right print:hidden">
                                                 <button
                                                     onClick={() => removeToAddress(index)}
@@ -508,7 +502,7 @@ export default function PrintPage() {
                         width: 105mm !important;
                         height: 148.5mm !important;
                         border: 1px solid #000000 !important;
-                        padding: 1.5cm 1.2cm !important;
+                        padding: 1cm 1cm !important;
                         box-sizing: border-box !important;
                         page-break-inside: avoid !important;
                         position: relative !important;
@@ -523,11 +517,11 @@ export default function PrintPage() {
                         line-height: 1.2 !important;
                     }
                     td:not(:first-child) {
-                        margin-top: 0.4cm !important;
+                        margin-top: 0.15cm !important;
                     }
                     .ship-from {
                         display: block !important;
-                        margin-bottom: 1.2cm !important;
+                        margin-bottom: 0.6cm !important;
                         font-size: 12pt !important;
                         color: #000000 !important;
                         border-bottom: 2px solid #000000 !important;
